@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "smartbees",
+      "runtimeExecutable": "streamlit",
+      "runtimeArgs": ["run", "app.py", "--server.port=8501", "--server.headless=true"],
+      "port": 8501,
+      "autoPort": false
+    },
+    {
+      "name": "bi-toolkit",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-lc",
+        "cd /Users/bharanikrishnaa/Documents/bi-toolkit && exec streamlit run app.py --server.port 8520 --server.headless true --browser.gatherUsageStats false"
+      ],
+      "port": 8520,
+      "autoPort": false
+    }
+  ]
+}

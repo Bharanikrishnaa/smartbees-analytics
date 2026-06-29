@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app.py'\\).read\\(\\)\\); print\\('OK — parses'\\)\")",
+      "Bash(xargs kill -9)",
+      "Bash(lsof -i :8501 -sTCP:LISTEN)",
+      "Bash(ps -p 4459 -o pid,command)",
+      "Bash(pkill -9 -f \"streamlit run app.py\")",
+      "Bash(ps -axo pid,ppid,command)",
+      "Bash(ps -p 4344 -o pid,command)",
+      "Bash(python3 -c \"import streamlit; print\\('streamlit', streamlit.__version__\\)\")",
+      "Bash(python3 -c \"import pandas as pd; df=pd.read_csv\\('marketing_data.csv'\\); print\\(df.dtypes\\); print\\('---numeric---'\\); print\\(df.select_dtypes\\('number'\\).columns.tolist\\(\\)\\)\")",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\('app.py'\\).read\\(\\)\\); print\\('app.py parses OK'\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(pip show *)",
+      "Bash(python3 -c \"import anthropic; print\\('anthropic', anthropic.__version__\\)\")",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\('app.py'\\).read\\(\\)\\); print\\('syntax OK'\\)\")"
+    ]
+  }
+}
